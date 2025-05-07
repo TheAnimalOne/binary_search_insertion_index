@@ -5,6 +5,9 @@ edition = "2021"
 
 [dependencies]
 
+[lib]
+path = "binary_search_insertion_index/src/lib.rs"
+
 [[bin]]
-name = "lib"
+name = "binary_search_insertion_index"
 path = "binary_search_insertion_index/src/lib.rs"

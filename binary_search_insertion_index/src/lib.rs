@@ -52,7 +52,7 @@ mod tests {
             } else if test_target > lst.len() as i32 {
                 lst.len() as i32
             } else {
-                test_target as i32
+                test_target
             };
             assert_eq!(ind, exp_ind);
         }
@@ -75,9 +75,10 @@ mod tests {
     }
 
     // test using list over vec
+    #[test]
     fn test_list_input_instead_of_vec() {
-        let lst = [1, 1, 1, 2, 2, 2];
+        let lst = [1, 1, 1, 2, 2, 2, 3];
         let ind = binary_search_insertion_index(&lst, 2);
-        assert_eq!(ind, 5);
+        assert_eq!(ind, 6);
     }
 }
